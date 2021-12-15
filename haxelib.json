@@ -1,13 +1,17 @@
 {
   "name": "kglog",
-  "url" : "https://github.com/keystone-games/kglog/",
+  "url": "https://github.com/keystone-games/kglog/",
   "license": "MIT",
-  "tags": ["logging"],
+  "tags": [
+    "logging"
+  ],
   "description": "A logging system for Keystone Games applications",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "classPath": "src/",
   "releasenote": "",
-  "contributors": ["SidGames5"],
+  "contributors": [
+    "SidGames5"
+  ],
   "dependencies": {
     "Console.hx": "0.2.12",
     "console-out": "0.0.1"
