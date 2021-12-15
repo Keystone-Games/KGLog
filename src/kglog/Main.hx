@@ -7,6 +7,7 @@ class Main
 	static public function main():Void
 	{
 		trace("Starting KGLog " + Reference.VERSION);
+		init();
 	}
 
 	public function init()
