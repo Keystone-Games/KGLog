@@ -10,12 +10,12 @@ class Main
 		init();
 	}
 
-	public function init()
+	public static function init()
 	{
 		postInit();
 	}
 
-	public function postInit()
+	public static function postInit()
 	{
 		Console.log("<red>  _  __    ___     _               __ _  </red>");
 		Console.log("<orange> | |/ /   / __|   | |      ___    / _` | </orange>");
