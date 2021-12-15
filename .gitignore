@@ -14,3 +14,13 @@
 .vscode/
 .idea/
 .eclipse/
+
+# Packages
+*.zip
+*.exe
+*.bin
+*.dll
+*.ndll
+*.pyc
+*.luac
+*.hl
