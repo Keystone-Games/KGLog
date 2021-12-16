@@ -10,7 +10,9 @@ To update kglog, just type `haxelib update kglog` in the command prompt.
 ## Features (1.0.0)
 
 -Logging to the console
+
 -Logging to a file
 
 SimpleLog:
+
 Logs a simple string of text to the console and the application's log file.
