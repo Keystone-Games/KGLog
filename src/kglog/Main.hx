@@ -23,4 +23,6 @@ class Main
 		Console.log("<green> |_|\\_\\   \\___|   |____|  \\___/   |___/  </green>");
 		trace("KGLog version " + Reference.VERSION + " has been loaded");
 	}
+	
+	Logger.config();
 }
