@@ -46,4 +46,12 @@ class Logger
 		var p = Path.join([logDir, logFile]);
 		File.saveContent(p, Text);
 	}
+
+	public static function error(Error:String, Location:String)
+	{
+		Console.error("Error: " + Error + " at " + Location);
+
+		var p = Path.join([logDir, logFile]);
+		File.saveContent(p, "Error at " + Location + ": " + Error);
+	}
 }
