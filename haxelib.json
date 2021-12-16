@@ -14,7 +14,8 @@
   ],
   "dependencies": {
     "Console.hx": "0.2.12",
-    "console-out": "1.0.0"
+    "console-out": "1.0.0",
+    "lime": "7.9.0"
   },
   "main": "kglog.Main"
 }
