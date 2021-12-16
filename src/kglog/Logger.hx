@@ -62,6 +62,6 @@ class Logger
 
 		var p = Path.join([logDir, logFile]);
 		//File.saveContent(p, "Error at " + Location + ": " + Error);
-		
+		sessionLog = sessionLog + "Error at " + Location + ": " + Error);
 	}
 }
