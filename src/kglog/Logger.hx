@@ -47,6 +47,11 @@ class Logger
 		File.saveContent(p, Text);
 	}
 
+	/**
+	 * Log an error to the log file and console.
+	 * @param  Error     The error text to log.
+	 * @param  Location  Class name and path of error location
+	 */
 	public static function error(Error:String, Location:String)
 	{
 		Console.error("Error: " + Error + " at " + Location);
