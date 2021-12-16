@@ -13,6 +13,7 @@ class Main
 
 	public static function init()
 	{
+		Logger.config(System.applicationStorageDirectory);
 		postInit();
 	}
 
@@ -25,5 +26,12 @@ class Main
 		trace("KGLog version " + Reference.VERSION + " has been loaded");
 	}
 	
-	Logger.config(System.applicationStorageDirectory);
+	public static function end() {
+		trace("Stopping KGLog");
+		
+		var p = Path.join([Logger.logDir, Logger.logFile]);
+		File.saveContent(p, Logger.sessionLog);
+		
+		trace("Logs saved");
+	}
 }
