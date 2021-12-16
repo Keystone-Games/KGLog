@@ -1,6 +1,7 @@
 package kglog;
 
 import kglog.util.Reference;
+import lime.system.System;
 
 class Main
 {
@@ -24,5 +25,5 @@ class Main
 		trace("KGLog version " + Reference.VERSION + " has been loaded");
 	}
 	
-	Logger.config();
+	Logger.config(System.applicationStorageDirectory);
 }
