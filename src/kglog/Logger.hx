@@ -14,6 +14,8 @@ class Logger
 	 * Name of the log file.
 	 */
 	public static var logFile:String = "yyyy-mm-dd@hh:mm:ss.log";
+	
+	public static var sessionLog:String;
 
 	/**
 	 * Configures the logger.
@@ -31,7 +33,8 @@ class Logger
 		/*File.saveContent(p, sDate);
 			File.saveContent(p, sTime);
 			File.saveContent(p, ""); */
-		File.saveContent(p, "Log " + sDate + " at " + sTime + "\n");
+		//File.saveContent(p, "Log " + sDate + " at " + sTime + "\n");
+		sessionLog = sessionLog + "Log " + sDate + " at " + sTime + "\n");
 	}
 
 	/**
@@ -44,7 +47,8 @@ class Logger
 		Console.log(Text);
 
 		var p = Path.join([logDir, logFile]);
-		File.saveContent(p, Text);
+		//File.saveContent(p, Text);
+		sessionLog = sessionLog + Text + "\n";
 	}
 
 	/**
@@ -57,6 +61,7 @@ class Logger
 		Console.error("Error: " + Error + " at " + Location);
 
 		var p = Path.join([logDir, logFile]);
-		File.saveContent(p, "Error at " + Location + ": " + Error);
+		//File.saveContent(p, "Error at " + Location + ": " + Error);
+		sessionLog = sessionLog + "Error at " + Location + ": " + Error);
 	}
 }
