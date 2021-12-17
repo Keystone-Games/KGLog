@@ -2,7 +2,12 @@
 
 ## 1.1.0
 
+
+### What's new
+
 -Add error function
+
+### Dependencies
 
 -Update to a newer version of console-out
 
