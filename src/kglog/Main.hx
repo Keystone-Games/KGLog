@@ -25,13 +25,14 @@ class Main
 		Console.log("<green> |_|\\_\\   \\___|   |____|  \\___/   |___/  </green>");
 		trace("KGLog version " + Reference.VERSION + " has been loaded");
 	}
-	
-	public static function end() {
+
+	public static function end()
+	{
 		trace("Stopping KGLog");
-		
+
 		var p = Path.join([Logger.logDir, Logger.logFile]);
 		File.saveContent(p, Logger.sessionLog);
-		
+
 		trace("Logs saved");
 	}
 }
