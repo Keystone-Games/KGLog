@@ -1,18 +1,17 @@
 # Changelog
 
-## 1.1.0
+## Additions
 
+- "error" function - Log information about an error
 
-### What's new
+## Changes
 
--Add error function
+No changes in this update
 
-### Dependencies
+## Removals
 
--Update to a newer version of console-out
+No removals in this update
 
--Add the lime dependency
+## Bugs fixed
 
-## 1.0.1
-
--Fix issue #1
+No bugs fixed in this update
