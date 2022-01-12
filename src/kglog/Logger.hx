@@ -44,7 +44,7 @@ class Logger
 	 */
 	public static function simpleLog(Text:Any):Void
 	{
-		Console.log(Text);
+		Sys.println('$Text');
 
 		var p = Path.join([logDir, logFile]);
 		// File.saveContent(p, Text);
@@ -56,9 +56,9 @@ class Logger
 	 * @param  Error     The error text to log.
 	 * @param  Location  Class name and path of error location
 	 */
-	public static function error(Error:Any, Location:Any)
+	public static function error(Error:String, Location:String)
 	{
-		Console.error("Error: " + Error + " at " + Location);
+		Console.error('Error: $Error at $Location');
 
 		var p = Path.join([logDir, logFile]);
 		// File.saveContent(p, "Error at " + Location + ": " + Error);
