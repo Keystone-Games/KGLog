@@ -45,7 +45,9 @@ class Logger
 	 */
 	public static function simpleLog(Text:Any):Void
 	{
+		#if sys
 		Sys.println('$Text');
+		#sys
 
 		var p = Path.join([logDir, logFile]);
 		// File.saveContent(p, Text);
@@ -59,7 +61,9 @@ class Logger
 	 */
 	public static function error(Error:String, Location:String)
 	{
+		#if sys
 		Sys.stderr('Error: $Error at $Location');
+		#end
 
 		var p = Path.join([logDir, logFile]);
 		// File.saveContent(p, "Error at " + Location + ": " + Error);
