@@ -7,6 +7,10 @@ A simple logging system for Keystone Games applications.
 All you have to do is type `haxelib install kglog` in the command prompt. This will install the latest version of kglog.
 To update kglog, just type `haxelib update kglog` in the command prompt.
 
+## Updates
+
+This project uses SemVer 2.0. There are 3 digits in this versioning system. Example: `1.4.7`. When the 3rd digit increases, this indicates the release of a new patch. You will be able to upgrade to the new version with no issues. If the 2nd digit increases, this indicates a new minor release. You should be able to upgrade to the new version with no issues, but we highly recommend that you go through your code and find any errors with KGLog. Some changes may take place that are not compatible with your code. If the 1st digit increases, this indicates that there is a new major release. Major releases are completely different from an older version and NOT backwards compatible. When upgrading, you need to scan your code for errors with the libra
+
 ## Features (1.1.0)
 
 -Logging to the console
