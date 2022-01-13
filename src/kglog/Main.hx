@@ -1,7 +1,7 @@
 package kglog;
 
 import kglog.util.Reference;
-import lime.system.System;
+// import lime.system.System;
 
 class Main
 {
@@ -13,7 +13,7 @@ class Main
 
 	public static function init()
 	{
-		Logger.config(System.applicationStorageDirectory);
+		// Logger.config(System.applicationStorageDirectory);
 		postInit();
 	}
 
