@@ -1,6 +1,7 @@
 package kglog;
 
 import Console;
+import ConsoleOut;
 import haxe.io.Path;
 
 class Logger
@@ -58,7 +59,7 @@ class Logger
 	 */
 	public static function error(Error:String, Location:String)
 	{
-		Console.error('Error: $Error at $Location');
+		Sys.stderr('Error: $Error at $Location');
 
 		var p = Path.join([logDir, logFile]);
 		// File.saveContent(p, "Error at " + Location + ": " + Error);
