@@ -43,7 +43,7 @@ class Logger
 	 * and to the console.
 	 * @param  Text  String of text to log.
 	 */
-	public static function simpleLog(Text:Any):Void
+	public static function log(Text:Any):Void
 	{
 		#if sys
 		Sys.println('$Text');
@@ -52,6 +52,21 @@ class Logger
 		var p = Path.join([logDir, logFile]);
 		// File.saveContent(p, Text);
 		sessionLog = sessionLog + Text + "\n";
+	}
+	
+	/**
+	 * Sends a string of text containing locations to the program's log file
+	 * @param  Text      String of text to low.
+	 * @param  Location  Location to log
+	 */
+	public static function trace(Text:String, Location:String) {
+		#if sys
+		Sys.println(Location + ": " + Text);
+		#end
+			
+		var p = Path.join([logDir, logFile]);
+		// File.saveContent(p, "Error at " + Location + ": " + Error);
+		sessionLog = sessionLog + Location + ": " + Text;
 	}
 
 	/**
