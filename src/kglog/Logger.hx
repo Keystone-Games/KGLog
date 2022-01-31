@@ -43,7 +43,7 @@ class Logger
 	 * and to the console.
 	 * @param  Text  String of text to log.
 	 */
-	public static function simpleLog(Text:Any):Void
+	@:deprecated public static function simpleLog(Text:Any):Void
 	{
 		trace("Logger.simpleLog() is deprecated. Use Logger.info() instead");
 		info(Text);
