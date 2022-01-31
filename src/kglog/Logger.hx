@@ -43,8 +43,18 @@ class Logger
 	 * and to the console.
 	 * @param  Text  String of text to log.
 	 */
-	public static function log(Text:Any):Void
+	public static function simpleLog(Text:Any):Void
 	{
+		trace("Logger.simpleLog() is deprecated. Use Logger.info() instead");
+		info(Text);
+	}
+	
+	/**
+	 * Send a string of text to the program's log file
+	 * and to the console.
+	 * @param  Text  String of text to log.
+	 */
+	public static function info(Text:Any):Void {
 		#if sys
 		Sys.println('$Text');
 		#sys
