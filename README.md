@@ -24,3 +24,33 @@ Logs a simple string of text to the console and the application's log file.
 ### Error
 
 Logs an error to the logs with path information.
+
+### Info
+
+Logs a simple string of text to the console and the application's log file.
+
+### Debug
+
+Logs a string of text with an indicator that it is for debugging.
+
+## Usage
+
+Info
+
+Code:
+```haxe
+package;
+
+import kglog.Logger;
+
+class Program {
+  public static function main() {
+    Logger.info("Hello world!");
+  }
+}
+```
+
+Result:
+```
+Hello world!
+```
