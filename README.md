@@ -35,7 +35,7 @@ Logs a string of text with an indicator that it is for debugging.
 
 ## Usage
 
-Info
+### Info
 
 Code:
 ```haxe
