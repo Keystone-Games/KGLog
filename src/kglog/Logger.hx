@@ -90,10 +90,14 @@ class Logger
 	public static function error(Error:String, Location:String)
 	{
 		#if sys
-		Sys.stderr('Error: $Error at $Location');
+		Sys.stderr('[error] $Error at $Location');
 		#end
 
 		var p = Path.join([logDir, logFile]);
 		sessionLog = sessionLog + "Error at " + Location + ": " + Error;
+	}
+	
+	public static function warn(Message:String) {
+		Console.log('<#ffaa00>[warn] $Message</>')
 	}
 }
