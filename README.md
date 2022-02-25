@@ -7,6 +7,7 @@ A simple logging system for Keystone Games applications.
 All you have to do is type `haxelib install kglog` in the command prompt. This will install the latest version of kglog.
 To update kglog, just type `haxelib update kglog` in the command prompt.
 To include the library in your project you must add `-lib kglog` to build.hxml.
+You need to run `Logger.config(directory)` on startup and `Main.end()` on shutdown.
 
 ## Updates
 
