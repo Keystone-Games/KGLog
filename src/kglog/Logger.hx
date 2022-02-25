@@ -64,6 +64,10 @@ class Logger
 		sessionLog = sessionLog + Text + "\n";
 	}
 	
+	public static function debug(Text:Any):Void {
+		
+	}
+	
 	/**
 	 * Sends a string of text containing locations to the program's log file
 	 * @param  Text      String of text to low.
