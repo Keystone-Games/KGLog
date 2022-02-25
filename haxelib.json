@@ -6,7 +6,7 @@
     "logging"
   ],
   "description": "A logging system for Keystone Games applications",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "classPath": "src/",
   "releasenote": "Add new functions (info, debug, error)",
   "contributors": [
