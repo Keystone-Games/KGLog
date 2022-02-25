@@ -57,7 +57,7 @@ class Logger
 	public static function info(Text:Any):Void {
 		#if sys
 		Sys.println('$Text');
-		#sys
+		#end
 
 		var p = Path.join([logDir, logFile]);
 		// File.saveContent(p, Text);
@@ -65,7 +65,12 @@ class Logger
 	}
 	
 	public static function debug(Text:Any):Void {
-		
+		#if sys
+		Sys.println('[debug] $Text');
+		#end
+			
+		var p = Path.join([logDir, logFile]);
+		sessionLog = sessionLog + "[debug] " + Text + "\n";
 	}
 	
 	/**
