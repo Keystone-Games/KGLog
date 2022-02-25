@@ -33,6 +33,10 @@ Logs a simple string of text to the console and the application's log file.
 
 Logs a string of text with an indicator that it is for debugging.
 
+### Trace
+
+Logs a simple string of text to the logs with path information.
+
 ## Usage
 
 ### Info
