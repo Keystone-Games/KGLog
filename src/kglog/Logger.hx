@@ -31,6 +31,10 @@ class Logger
 		var sTime = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
 		logFile = sDate + "@" + sTime + ".log";
 		var p = Path.join([logDir, logFile]);
+		/*File.saveContent(p, sDate);
+			File.saveContent(p, sTime);
+			File.saveContent(p, ""); */
+		// File.saveContent(p, "Log " + sDate + " at " + sTime + "\n");
 		sessionLog = sessionLog + "Log " + sDate + " at " + sTime + "\n";
 	}
 
@@ -56,6 +60,7 @@ class Logger
 		#end
 
 		var p = Path.join([logDir, logFile]);
+		// File.saveContent(p, Text);
 		sessionLog = sessionLog + Text + "\n";
 	}
 	
@@ -79,6 +84,7 @@ class Logger
 		#end
 			
 		var p = Path.join([logDir, logFile]);
+		// File.saveContent(p, "Error at " + Location + ": " + Error);
 		sessionLog = sessionLog + Location + ": " + Text;
 	}
 
@@ -94,6 +100,7 @@ class Logger
 		#end
 
 		var p = Path.join([logDir, logFile]);
+		// File.saveContent(p, "Error at " + Location + ": " + Error);
 		sessionLog = sessionLog + "Error at " + Location + ": " + Error;
 	}
 }
